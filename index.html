@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Acessível e Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo"></h1>
+        <p id="descricao">Este site foi criado para oferecer uma experiência acessível e dinâmica.</p>
+    </header>
+
+    <main>
+        <div class="acessibilidade">
+            <button id="leitor">🔊 Leitor de Tela</button>
+            <button id="contraste">🌗 Alto Contraste</button>
+            <button id="libras">🤟 Libras</button>
+            <button id="aumentarTexto">🔍 Aumentar Texto</button>
+            <button id="diminuirTexto">🔎 Diminuir Texto</button>
+        </div>
+
+        <!-- Abas -->
+        <div class="abas">
+            <button class="aba-btn" onclick="abrirAba('aba1')">♿ O que é acessibilidade?</button>
+            <button class="aba-btn" onclick="abrirAba('aba2')">💡 Dicas de inclusão</button>
+            <button class="aba-btn" onclick="abrirAba('aba3')">🔧 Ferramentas úteis</button>
+        </div>
+
+        <!-- Conteúdo das abas -->
+        <div class="aba-conteudo" id="aba1">
+            <h2>O que é acessibilidade?</h2>
+            <p>A acessibilidade digital garante que todos, independentemente de limitações, possam navegar e interagir com a web.</p>
+        </div>
+
+        <div class="aba-conteudo" id="aba2">
+            <h2>Dicas de inclusão</h2>
+            <ul>
+                <li>Use legendas em vídeos.</li>
+                <li>Adote leitores de tela para textos.</li>
+                <li>Garanta contrastes adequados.</li>
+            </ul>
+        </div>
+
+        <div class="aba-conteudo" id="aba3">
+            <h2>Ferramentas úteis</h2>
+            <p>Confira algumas ferramentas para tornar a web mais acessível:</p>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/test-evaluate/" target="_blank">W3C Accessibility Evaluation</a></li>
+                <li><a href="https://contrast-ratio.com/" target="_blank">Contrast Checker</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>nunca sei o que colocar aqui</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
