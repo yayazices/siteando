@@ -3,58 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Acessível e Interativo</title>
+    <title>Acessibilizando.com 2.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1 id="titulo"></h1>
-        <p id="descricao">Este site foi criado para oferecer uma experiência acessível e dinâmica.</p>
+        <h1 id="logo">Acessibilizando.com 2.0</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#ferramentas">Ferramentas</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div class="acessibilidade">
-            <button id="leitor">🔊 Leitor de Tela</button>
-            <button id="contraste">🌗 Alto Contraste</button>
-            <button id="libras">🤟 Libras</button>
-            <button id="aumentarTexto">🔍 Aumentar Texto</button>
-            <button id="diminuirTexto">🔎 Diminuir Texto</button>
-        </div>
-
-        <!-- Abas -->
-        <div class="abas">
-            <button class="aba-btn" onclick="abrirAba('aba1')">♿ O que é acessibilidade?</button>
-            <button class="aba-btn" onclick="abrirAba('aba2')">💡 Dicas de inclusão</button>
-            <button class="aba-btn" onclick="abrirAba('aba3')">🔧 Ferramentas úteis</button>
-        </div>
-
-        <!-- Conteúdo das abas -->
-        <div class="aba-conteudo" id="aba1">
+    <section id="sobre" class="secao">
+        <div class="conteudo">
             <h2>O que é acessibilidade?</h2>
-            <p>A acessibilidade digital garante que todos, independentemente de limitações, possam navegar e interagir com a web.</p>
+            <p>A acessibilidade digital garante que qualquer pessoa, independente de limitações, possa navegar e interagir com a web de forma fácil e intuitiva.</p>
         </div>
+        <img src="https://content.unguess.io/hubfs/Accessibility/illust-01.png" alt="Ilustração de acessibilidade">
+    </section>
 
-        <div class="aba-conteudo" id="aba2">
-            <h2>Dicas de inclusão</h2>
-            <ul>
-                <li>Use legendas em vídeos.</li>
-                <li>Adote leitores de tela para textos.</li>
-                <li>Garanta contrastes adequados.</li>
-            </ul>
+    <section id="dicas" class="secao">
+        <h2>Dicas de Inclusão</h2>
+        <div class="card-container">
+            <div class="card">Use legendas em vídeos.</div>
+            <div class="card">Garanta contraste adequado.</div>
+            <div class="card">Adote leitores de tela.</div>
         </div>
+    </section>
 
-        <div class="aba-conteudo" id="aba3">
-            <h2>Ferramentas úteis</h2>
-            <p>Confira algumas ferramentas para tornar a web mais acessível:</p>
-            <ul>
-                <li><a href="https://www.w3.org/WAI/test-evaluate/" target="_blank">W3C Accessibility Evaluation</a></li>
-                <li><a href="https://contrast-ratio.com/" target="_blank">Contrast Checker</a></li>
-            </ul>
-        </div>
-    </main>
+    <section id="ferramentas" class="secao">
+        <h2>Ferramentas Úteis</h2>
+        <ul>
+            <li><a href="https://youtu.be/23qSEIYo8o8" target="_blank">Como conquistar um site mais acessível</a></li>
+            <li><a href="https://contrast-ratio.com/" target="_blank">Contrast Checker, para auxiliar você.</a></li>
+        </ul>
+    </section>
+
+    <div class="acessibilidade">
+        <button id="leitor">Leitor de Tela</button>
+        <button id="contraste">Alto Contraste</button>
+        <button id="aumentarTexto">Aumentar Texto</button>
+        <button id="diminuirTexto">Diminuir Texto</button>
+    </div>
 
     <footer>
-        <p>nunca sei o que colocar aqui</p>
+        <p>Quero nota!!!!</p>
     </footer>
 
     <script src="main.js"></script>

@@ -10,14 +10,69 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Cabeçalho */
 header {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.2);
-    border-bottom: 2px solid white;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
 }
 
-/* Botões */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+.secao img {
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.secao img:hover {
+    transform: scale(1.1);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    color: #2575fc;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.acessibilidade {
+    margin: 30px;
+}
+
 button {
     background: white;
     color: #2575fc;
@@ -36,44 +91,13 @@ button:hover {
     color: white;
 }
 
-/* Abas */
-.abas {
-    margin: 20px 0;
-}
-
-.aba-btn {
-    padding: 10px;
-    background: white;
-    border: none;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.aba-btn:hover {
-    background: #2575fc;
+.contraste-alto {
+    background: black;
     color: white;
 }
 
-/* Conteúdo das abas */
-.aba-conteudo {
-    display: none;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    margin: auto;
-}
-
-/* Modo de alto contraste */
-.contraste-alto {
-    background: black;
-    color: yellow;
-}
-
-/* Rodapé */
 footer {
-    margin-top: 30px;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.8);
     font-weight: bold;
 }
